@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtual Try-On</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Virtual Try-On - Clothes</title>
+  <link rel="stylesheet" href="pg6.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Virtual Try-On</h1>
+    <div class="logo">Virtual Try-On - Clothes</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Virtual Try-On Section -->
   <main>
-    <section id="try-on">
-      <h2>Try on Clothes and Makeup</h2>
-      <div>
-        <input type="file" id="uploadImage" accept="image/*">
-        <button onclick="applyTryOn()">Try On</button>
+    <div id="virtual-tryon">
+      <h3>Try On Clothes Virtually</h3>
+      <p>Upload your photo and try on clothes virtually.</p>
+      <input type="file" id="photo-upload" accept="image/*">
+      <div id="tryon-container">
+        <img id="user-photo" src="" alt="Upload your photo" />
+        <div id="clothes-overlay"></div>
       </div>
-      <canvas id="canvas" width="300" height="400"></canvas>
-    </section>
+      <button onclick="resetTryOn()">Reset Try-On</button>
+    </div>
   </main>
 
-  <script src="tryon.js"></script>
+  <footer>
+    <p>&copy; 2024 Medicine E-commerce</p>
+  </footer>
+
+  <script src="pg6.js"></script>
 </body>
 </html>

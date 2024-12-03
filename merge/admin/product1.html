@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details with Advanced Features</title>
+  <link rel="stylesheet" href="product1.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Product Details</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="review.html">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <main>
+    <div id="product-detail" class="product-detail">
+      <!-- Product details will be dynamically loaded here -->
+    </div>
+
+    <!-- Delivery Info and Location Section -->
+    <div class="delivery-location">
+      <h3>Expected Delivery & Location</h3>
+      <p id="delivery-info">Delivery by: <span id="delivery-date"></span></p>
+      <p>Return Policy: 30 Days Return.</p>
+      <p id="location-status">Fetching your location...</p>
+      <div id="map" class="map"></div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+      <h3>Reviews</h3>
+      <form id="review-form">
+        <div>
+          <label for="rating">Rating:</label>
+          <select id="rating">
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+          </select>
+        </div>
+        <div>
+          <label for="review">Your Review:</label>
+          <textarea id="review" rows="3" placeholder="Write your review..."></textarea>
+        </div>
+        <button type="submit">Submit Review</button>
+      </form>
+      <div id="review-list"></div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="recommendations">
+      <h3>Recommended Products</h3>
+      <div id="recommendation-list" class="recommendation-list">
+        <!-- Recommended products will be loaded here -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 E-Commerce Platform | All Rights Reserved</p>
+  </footer>
+
+  <script src="product1.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="ad.css">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside>
+    <div class="logo">Admin Panel</div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+        <li><a href="#" onclick="showSection('products')">Manage Products</a></li>
+        <li><a href="#" onclick="showSection('orders')">Manage Orders</a></li>
+        <li><a href="#" onclick="showSection('users')">Manage Users</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="active-section">
+      <h2>Dashboard</h2>
+      <div class="stats">
+        <div>Total Sales: <span>$5000</span></div>
+        <div>Total Orders: <span>120</span></div>
+        <div>Total Products: <span>45</span></div>
+        <div>Total Users: <span>300</span></div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="hidden-section">
+      <h2>Manage Products</h2>
+      <button onclick="addNewProduct()">Add New Product</button>
+      <div id="product-list">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="hidden-section">
+      <h2>Manage Orders</h2>
+      <div id="order-list">
+        <!-- Orders will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- Users Section -->
+    <section id="users" class="hidden-section">
+      <h2>Manage Users</h2>
+      <div id="user-list">
+        <!-- Users will be dynamically loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Admin Panel</p>
+  </footer>
+
+  <script src="ad.js"></script>
+</body>
+</html>

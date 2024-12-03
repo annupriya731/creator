@@ -1,0 +1,98 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F8F9FA;
+  color: #343A40;
+}
+
+header {
+  background-color: #E63946; /* Vibrant Red for Clothes Section */
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.clothes-section {
+  padding: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.product-card p {
+  color: #E63946;
+  font-weight: bold;
+}
+
+button {
+  background-color: #FFD166;
+  border: none;
+  padding: 0.5em 1em;
+  color: #343A40;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #F4A261;
+}
+.btn2{
+  margin-top: 30px;
+  width: 20%;
+  display: flex;
+background-color: #F4A261;
+  height: 40px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+}
+.main2{
+ 
+  height: 250px;
+  width: 100%;
+  background-size: contain;
+  
+  
+  background-color: antiquewhite;
+}
