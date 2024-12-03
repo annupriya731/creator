@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Shopping Cart</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seller.html">Seller Dashboard</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <main>
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <!-- Cart items will be dynamically loaded here -->
+    </div>
+    <div id="cart-summary">
+      <p>Total: <span id="cart-total">$0</span></p>
+      <button onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Medicine E-commerce</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

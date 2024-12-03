@@ -1,0 +1,26 @@
+.order {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.order h3 {
+  margin: 0 0 5px;
+}
+
+.order p {
+  margin: 5px 0;
+}
+
+.status {
+  font-weight: bold;
+  color: green;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.delivered {
+  color: blue;
+}
